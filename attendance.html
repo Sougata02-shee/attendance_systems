@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
 </head>
 <body>
+    <center>
     <h1>Mark Attendance</h1>
     <form action="{{ url_for('attendance') }}" method="post">
         <button type="submit">Capture Attendance</button>
@@ -22,5 +23,6 @@
         <p><a href="{{ url_for('download_attendance') }}">Download Attendance File</a></p>
     {% endif %}
     <a href="{{ url_for('home')}}">Back to Home</a>
+    </center>
 </body>
 </html>
