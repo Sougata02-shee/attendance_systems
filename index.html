@@ -7,10 +7,12 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
 </head>
 <body>
+    <center>
     <h1>Welcome to the Attendance System</h1>
     <nav>
-        <a href="{{ url_for('register') }}">Register</a>
+        <a href="{{ url_for('register') }}">Register</a><br>
         <a href="{{ url_for('attendance') }}">Mark Attendance</a>
     </nav>
+    </center>
 </body>
 </html>
