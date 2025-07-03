@@ -1,4 +1,4 @@
-## Attendance Systems
+# Attendance Systems
 ### Project Overview 
 This face recognition attendance system where users can register with their photos, and the system capture attendance using a Webcam by matching faces with registered users . Attendance is recorded in an excel sheet.
 ### Technologies Used
