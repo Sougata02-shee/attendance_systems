@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mark Attendance</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <center>
+    <h1>Mark Attendance</h1>
+    <form action="{{ url_for('attendance') }}" method="post">
+        <button type="submit">Capture Attendance</button>
+    </form>
+    
+    {% if attendees %}
+        <h2>Attendance Recorded:</h2>
+        <ul>
+            {% for name in attendees %}
+                <li>{{ name }}</li>
+            {% endfor %}
+        </ul>
+        <p><a href="{{ url_for('download_attendance') }}">Download Attendance File</a></p>
+    {% endif %}
+    <a href="{{ url_for('home')}}">Back to Home</a>
+    </center>
+</body>
+</html>
